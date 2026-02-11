@@ -1,0 +1,33 @@
+// ==========================================================================
+// M3 Spacing Tokens
+// 4dp base unit - fixed pixel values for consistent layouts
+// See: https://m3.material.io/foundations/layout/understanding-layout/spacing
+// ==========================================================================
+
+:root {
+    // ---------------------------------------------------------------------------
+    // Reference tokens (md.ref.space.*)
+    // Named by their dp value: --md-ref-space-{N} = Npx
+    // Use these when you need a specific value outside the semantic scale
+    // ---------------------------------------------------------------------------
+    --md-ref-space-4: 4px;
+    --md-ref-space-8: 8px;
+    --md-ref-space-12: 12px;
+    --md-ref-space-16: 16px;
+    --md-ref-space-20: 20px;
+    --md-ref-space-24: 24px;
+    --md-ref-space-32: 32px;
+    --md-ref-space-40: 40px;
+    --md-ref-space-48: 48px;
+    --md-ref-space-64: 64px;
+
+    // ---------------------------------------------------------------------------
+    // Semantic spacing scale
+    // Aligned with Angular Material M3 component usage
+    // ---------------------------------------------------------------------------
+    --space-xs: var(--md-ref-space-4); // 4px  - tight: icon offsets, inline
+    --space-sm: var(--md-ref-space-8); // 8px  - small: icon-to-text, button gaps
+    --space-md: var(--md-ref-space-16); // 16px - medium: card padding, form gaps
+    --space-lg: var(--md-ref-space-24); // 24px - large: dialog padding, layout margins
+    --space-xl: var(--md-ref-space-48); // 48px - xlarge: page sections
+}

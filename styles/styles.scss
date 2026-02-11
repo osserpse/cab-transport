@@ -1,0 +1,53 @@
+@use './tokens/spacing';
+@use './tokens/motion';
+@use './tokens/icons';
+
+@import './theme/_theme.css';
+@import './_typography.css';
+
+html {
+    color-scheme: light dark;
+
+    &.light,
+    &.light-medium-contrast,
+    &.light-high-contrast {
+        color-scheme: light;
+    }
+
+    &.dark,
+    &.dark-medium-contrast,
+    &.dark-high-contrast {
+        color-scheme: dark;
+    }
+}
+
+body {
+    margin: 0;
+    background: var(--mat-sys-surface);
+    color: var(--mat-sys-on-surface);
+    font: var(--mat-sys-body-large);
+    letter-spacing: var(--mat-sys-body-large-tracking);
+    overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+legend {
+    margin: 0 0 0.5em;
+    padding: 0;
+}
+
+router-outlet+* {
+    flex: 1 1 auto;
+    overflow: hidden;
+}

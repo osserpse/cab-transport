@@ -1,0 +1,95 @@
+/* M3 Typography for App GUI */
+
+/* ============================================
+   ELEMENT STYLES (Global)
+   
+   App UI heading hierarchy using Title scale:
+   - h1: Page header (title-large, 22px)
+   - h2: Section header (title-medium, 16px)
+   - h3: Subsection header (title-small, 14px)
+   - h4-h6: Unstyled (inherit body, discouraged)
+   - p: Body content (body-large, 16px)
+   ============================================ */
+
+h1 {
+    font: var(--mat-sys-title-large);
+    letter-spacing: var(--mat-sys-title-large-tracking);
+    margin: 0 0 0.5em;
+}
+
+h2 {
+    font: var(--mat-sys-title-medium);
+    letter-spacing: var(--mat-sys-title-medium-tracking);
+    margin: 0 0 0.5em;
+}
+
+h3 {
+    font: var(--mat-sys-title-small);
+    letter-spacing: var(--mat-sys-title-small-tracking);
+    margin: 0 0 0.5em;
+}
+
+p {
+    font: var(--mat-sys-body-large);
+    letter-spacing: var(--mat-sys-body-large-tracking);
+    margin: 0 0 0.75em;
+}
+
+legend {
+    font: var(--mat-sys-title-medium);
+    letter-spacing: var(--mat-sys-title-medium-tracking);
+}
+
+/* ============================================
+   UTILITY CLASSES (Global)
+   
+   For explicit typography control when needed.
+   ============================================ */
+
+/* Title - Headings */
+.mat-title-large {
+    font: var(--mat-sys-title-large);
+    letter-spacing: var(--mat-sys-title-large-tracking);
+}
+
+.mat-title-medium {
+    font: var(--mat-sys-title-medium);
+    letter-spacing: var(--mat-sys-title-medium-tracking);
+}
+
+.mat-title-small {
+    font: var(--mat-sys-title-small);
+    letter-spacing: var(--mat-sys-title-small-tracking);
+}
+
+/* Body - Content */
+.mat-body-large {
+    font: var(--mat-sys-body-large);
+    letter-spacing: var(--mat-sys-body-large-tracking);
+}
+
+.mat-body-medium {
+    font: var(--mat-sys-body-medium);
+    letter-spacing: var(--mat-sys-body-medium-tracking);
+}
+
+.mat-body-small {
+    font: var(--mat-sys-body-small);
+    letter-spacing: var(--mat-sys-body-small-tracking);
+}
+
+/* Label - Buttons, form labels */
+.mat-label-large {
+    font: var(--mat-sys-label-large);
+    letter-spacing: var(--mat-sys-label-large-tracking);
+}
+
+.mat-label-medium {
+    font: var(--mat-sys-label-medium);
+    letter-spacing: var(--mat-sys-label-medium-tracking);
+}
+
+.mat-label-small {
+    font: var(--mat-sys-label-small);
+    letter-spacing: var(--mat-sys-label-small-tracking);
+}
