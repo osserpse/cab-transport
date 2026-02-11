@@ -1,0 +1,27 @@
+<cab-vstack paddingX="large" paddingY="medium">
+    <h1>New Estimate</h1>
+    <mat-form-field appearance="outline">
+        <mat-label>License Plate</mat-label>
+        <input matInput />
+        <mat-icon matSuffix>directions_car</mat-icon>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Customer Name</mat-label>
+        <input matInput />
+        <mat-icon matSuffix>person</mat-icon>
+    </mat-form-field>
+    <fieldset>
+        <legend>Estimate Type</legend>
+        <mat-radio-group>
+            <cab-vstack spacing="none">
+                <mat-radio-button value="body">Body Estimate</mat-radio-button>
+                <mat-radio-button value="machine">Machine Damage Estimate</mat-radio-button>
+                <mat-radio-button value="glass">Glass Estimate</mat-radio-button>
+            </cab-vstack>
+        </mat-radio-group>
+    </fieldset>
+    <cab-hstack justify="right" spacing="small">
+        <cab-button text="Cancel" variant="text" />
+        <cab-button text="Create estimate" variant="filled" />
+    </cab-hstack>
+</cab-vstack>
